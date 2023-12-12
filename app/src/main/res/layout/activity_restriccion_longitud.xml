@@ -5,36 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".MainActivity">
+    tools:context=".RestriccionLongitud">
+
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Contador de caracteres"
+        android:text="Restriccion de longitud de contrasena"
         android:textAlignment="center"
         app:autoSizeMaxTextSize="32dp"
         android:textSize="22dp"/>
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp">
-
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editText"
+            android:id="@+id/passwordEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ingrese su nombre" />
-
+            android:hint="Ingrese su contrasena" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/charCountTextView"
-        android:layout_width="wrap_content"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitButton"
+        style="@style/ThemeOverlay.Material3.Button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textInputLayout"
-        android:layout_alignParentEnd="true"
-        android:text="0"
-        android:textSize="22dp" />
+        android:layout_marginTop="37dp"
+        android:text="Validar Correo"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
 
 </RelativeLayout>
